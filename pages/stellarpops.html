@@ -53,6 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Star and Gas Formation" href="starsandgas.html" />
     <link rel="prev" title="3. Statistical Properties of Galaxies" href="statprops.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -116,6 +117,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    4. Stellar Populations and Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="starsandgas.html">
+   5. Star and Gas Formation
   </a>
  </li>
 </ul>
@@ -256,8 +262,30 @@
     <a class="reference internal nav-link" href="#star-formation-histories">
      4.3.3. Star Formation Histories
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#measuring-galaxy-ages">
+       4.3.3.1. Measuring Galaxy Ages
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-overview-of-inputs-and-outputs">
+   4.4. An Overview of Inputs and Outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fitting-broadband-photometry-seds">
+   4.5. Fitting Broadband Photometry (SEDs)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenges-to-sed-modeling">
+   4.6. Challenges to SED Modeling
+  </a>
  </li>
 </ul>
 
@@ -330,8 +358,30 @@
     <a class="reference internal nav-link" href="#star-formation-histories">
      4.3.3. Star Formation Histories
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#measuring-galaxy-ages">
+       4.3.3.1. Measuring Galaxy Ages
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-overview-of-inputs-and-outputs">
+   4.4. An Overview of Inputs and Outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fitting-broadband-photometry-seds">
+   4.5. Fitting Broadband Photometry (SEDs)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenges-to-sed-modeling">
+   4.6. Challenges to SED Modeling
+  </a>
  </li>
 </ul>
 
@@ -417,6 +467,20 @@
 \frac{dn}{dM} \propto m^{-2.35}
 \]</div>
 </div>
+<ul class="simple">
+<li><p>Some other valuable things to know:</p>
+<ul>
+<li><p>Total Mass for a given IMF: <span class="math notranslate nohighlight">\(M_{\star}=\int_{m_{1}}^{m_{2}} m \xi(m) \mathrm{d} m\)</span></p></li>
+<li><p>Total luminosity for a given IMF: <span class="math notranslate nohighlight">\(L_{\star}=\int_{m_{1}}^{m_{2}} L(m) \xi(m) \mathrm{d} m\)</span></p></li>
+<li><p>Main sequence lifetimes: <span class="math notranslate nohighlight">\(\tau =10^{10} \frac{M}{L}\)</span></p></li>
+<li><p>Star formation rate: <span class="math notranslate nohighlight">\(\mathrm{SFR}=\frac{\mathrm{d} M}{\mathrm{~d} t}=\dot{M}\)</span></p>
+<ul>
+<li><p>For example, a <span class="math notranslate nohighlight">\(\tau\)</span>-model has: <span class="math notranslate nohighlight">\(\frac{\mathrm{d} M}{\mathrm{~d} t}=C e^{-t / \tau}\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="isochrones">
 <h3><span class="section-number">4.2.3. </span>Isochrones<a class="headerlink" href="#isochrones" title="Permalink to this headline">¶</a></h3>
@@ -489,7 +553,81 @@
 </div>
 <div class="section" id="star-formation-histories">
 <h3><span class="section-number">4.3.3. </span>Star Formation Histories<a class="headerlink" href="#star-formation-histories" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Consider the SFH of a simulated galaxy. Broadly, star formation rises rapidly, peaks near <span class="math notranslate nohighlight">\(z\sim 1\)</span> and then declines towards the present. There are wiggles over time, too, which might be bursty events.</p></li>
+<li><p><strong>The increase in metallicity with time depends on the star formation history.</strong></p>
+<ul>
+<li><p>Note that star forming galaxies have spectra which are dominated by the main sequence. IN a rising history, the spectra are dominated by young blue stars.</p></li>
+<li><p>Even though <span class="math notranslate nohighlight">\(M&gt;60 M_\odot\)</span> stars are luminous, they are quite rare. Star forming galaxy spectra are typically characterized by <span class="math notranslate nohighlight">\(M&gt;20 M_\odot\)</span> stars.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/47.png"><img alt="../_images/47.png" class="align-center" src="../_images/47.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p>We usually parametrize star formation histories with smooth functions. Some examples are:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/46.png"><img alt="../_images/46.png" class="align-center" src="../_images/46.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li><p><strong>Falling Star Formation History/Exponential Decay</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\text{SFR} \propto e^{-t/\tau}
+\]</div>
+<ul class="simple">
+<li><p><strong>Delayed Exponential</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\text{SFR} \propto te^{-t/\tau}
+\]</div>
+<ul class="simple">
+<li><p><strong>Rising SFH</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\text{SFR}\propto t
+\]</div>
+<ul class="simple">
+<li><p><strong>Rising <span class="math notranslate nohighlight">\(\tau\)</span></strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\text{SFR}\propto e^{t/\tau}
+\]</div>
+<ul class="simple">
+<li><p>A valuable thing to see are the fractional contributions to the spectra for various histories:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/48.png"><img alt="../_images/48.png" class="align-center" src="../_images/48.png" style="width: 600px;" /></a>
+<div class="section" id="measuring-galaxy-ages">
+<h4><span class="section-number">4.3.3.1. </span>Measuring Galaxy Ages<a class="headerlink" href="#measuring-galaxy-ages" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>One thing to note – much like with measuring masses, it’s best to measure ages at long wavelengths where you are not dominated by few, luminous stars.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/49.png"><img alt="../_images/49.png" class="align-center" src="../_images/49.png" style="width: 500px;" /></a>
 </div>
+</div>
+</div>
+<div class="section" id="an-overview-of-inputs-and-outputs">
+<h2><span class="section-number">4.4. </span>An Overview of Inputs and Outputs<a class="headerlink" href="#an-overview-of-inputs-and-outputs" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/50.png"><img alt="../_images/50.png" class="align-center" src="../_images/50.png" style="width: 750px;" /></a>
+</div>
+<div class="section" id="fitting-broadband-photometry-seds">
+<h2><span class="section-number">4.5. </span>Fitting Broadband Photometry (SEDs)<a class="headerlink" href="#fitting-broadband-photometry-seds" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A classic problem you run into when doing SED modeling is the degeneracy between age and dust. You need long wavelength information to break this degeneracy.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/51.png"><img alt="../_images/51.png" class="align-center" src="../_images/51.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/52.png"><img alt="../_images/52.png" class="align-center" src="../_images/52.png" style="width: 750px;" /></a>
+</div>
+<div class="section" id="challenges-to-sed-modeling">
+<h2><span class="section-number">4.6. </span>Challenges to SED Modeling<a class="headerlink" href="#challenges-to-sed-modeling" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Degeneracies between age and metallicity.</p></li>
+<li><p>SPS models are not perfect, and various stages of stellar evolution are still not well understood (AGB phase, for example)</p></li>
+<li><p>Dust-law, initial mass function, and star formation history typically have to be assumed</p></li>
+<li><p>Massive stars with low mass-to-light will dominate the spectra</p></li>
+</ul>
 </div>
 </div>
 
@@ -524,6 +662,13 @@
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title"><span class="section-number">3. </span>Statistical Properties of Galaxies</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="starsandgas.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Star and Gas Formation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
