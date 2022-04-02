@@ -53,6 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Statistical Properties of Galaxies" href="statprops.html" />
     <link rel="prev" title="The Milky Way" href="mw.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -106,6 +107,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Global Properties and Galaxy Correlations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="statprops.html">
+   Statistical Properties of Galaxies
   </a>
  </li>
 </ul>
@@ -246,6 +252,55 @@
   <a class="reference internal nav-link" href="#stellar-mass-metallicity-relation">
    Stellar Mass-Metallicity Relation
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#early-type-galaxies">
+     Early Type Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-type-galaxies">
+     Late Type Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sfr-stellar-mass-relation">
+   SFR-Stellar Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ssfr-stellar-mass-relation">
+   sSFR-Stellar Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-mass-halo-mass-relation">
+   Stellar-Mass Halo-Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-mass-size-relation">
+   Stellar-Mass Size Relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sersic-profile">
+     Sersic Profile
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mass-size-plot">
+     Mass-Size Plot
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#color-environment-relation">
+   Color-Environment Relation
+  </a>
  </li>
 </ul>
 
@@ -317,6 +372,55 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#stellar-mass-metallicity-relation">
    Stellar Mass-Metallicity Relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#early-type-galaxies">
+     Early Type Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-type-galaxies">
+     Late Type Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sfr-stellar-mass-relation">
+   SFR-Stellar Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ssfr-stellar-mass-relation">
+   sSFR-Stellar Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-mass-halo-mass-relation">
+   Stellar-Mass Halo-Mass Relation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-mass-size-relation">
+   Stellar-Mass Size Relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sersic-profile">
+     Sersic Profile
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mass-size-plot">
+     Mass-Size Plot
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#color-environment-relation">
+   Color-Environment Relation
   </a>
  </li>
 </ul>
@@ -417,10 +521,11 @@ m = M + \mu + K
 <li><p>We see two groups of galaxies when we plot color versus mass:</p>
 <ul>
 <li><p>Early type galaxies span 2 dex in mass but hardly change color</p></li>
-<li><p>The color slope for early type galaxies is driven primarily by metallicity</p></li>
-<li><p>The color slope for late-type galaxies is driven by star formation properties (dominant over dust effects)</p></li>
+<li><p><strong>The color slope for early type galaxies is driven primarily by metallicity</strong></p></li>
+<li><p><strong>The color slope for late-type galaxies is driven by star formation properties (dominant over dust effects)</strong></p></li>
 </ul>
 </li>
+<li><p>See the Mass-Metallicity relations below for more info on why the slopes for the two groups are the way they are. Fundamentally these are metallicity effects.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/9.png"><img alt="../_images/9.png" class="align-center" src="../_images/9.png" style="width: 500px;" /></a>
 </div>
@@ -435,6 +540,80 @@ m = M + \mu + K
 </div>
 <div class="section" id="stellar-mass-metallicity-relation">
 <h2>Stellar Mass-Metallicity Relation<a class="headerlink" href="#stellar-mass-metallicity-relation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="early-type-galaxies">
+<h3>Early Type Galaxies<a class="headerlink" href="#early-type-galaxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As you go to higher mass galaxies, star formation had generated more metals making stars more metal rich. Massive galaxies have more star formation, to zeroth order.</p></li>
+<li><p>You measure mostly Mg, Fe stellar absorption features via Lick indices for example, to measure this in ETGs.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/12.png"><img alt="../_images/12.png" class="align-center" src="../_images/12.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="late-type-galaxies">
+<h3>Late Type Galaxies<a class="headerlink" href="#late-type-galaxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>For late type galaxies, you can measure ionized HII regions which emit oxygen lines. This doesn’t happen in early type galaxies!</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/13.png"><img alt="../_images/13.png" class="align-center" src="../_images/13.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/14.png"><img alt="../_images/14.png" class="align-center" src="../_images/14.png" style="width: 500px;" /></a>
+</div>
+</div>
+<div class="section" id="sfr-stellar-mass-relation">
+<h2>SFR-Stellar Mass Relation<a class="headerlink" href="#sfr-stellar-mass-relation" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/18.png"><img alt="../_images/18.png" class="align-center" src="../_images/18.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="ssfr-stellar-mass-relation">
+<h2>sSFR-Stellar Mass Relation<a class="headerlink" href="#ssfr-stellar-mass-relation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>As you go to higher mass galaxies, the star formation rate per unit mass decreases. That is to say – star formation is less efficient at higher masses.</strong></p></li>
+<li><p>This effect drives the slope of the color-mass plots from above. Most efficient star formation is in low mass galaxies and thus those are bluer.</p></li>
+<li><p>More interpretable:</p>
+<ul>
+<li><p>Low mass galaxies have younger populations and formed more recently. Thus they have not yet converted mass to stars because potential is shallower.</p></li>
+<li><p>Larger galaxies, though, have had time to spread mass out over the halo where gas density is too low to form stars.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/15.png"><img alt="../_images/15.png" class="align-center" src="../_images/15.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="stellar-mass-halo-mass-relation">
+<h2>Stellar-Mass Halo-Mass Relation<a class="headerlink" href="#stellar-mass-halo-mass-relation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>One of the key ideas in galaxy formation is that the dark matter halo drives galaxy formation moreso than anything else. The halo mass should thus determine the galaxy evolution as a whole.</p>
+<ul>
+<li><p>Should set the potential, the kinetic gas temperature, accretion rate, etc.</p></li>
+<li><p>Measuring halo mass is really difficult.</p></li>
+</ul>
+</li>
+<li><p>Per unit mass, really massive haloes and really low mass haloes are inefficient at star formation.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/16.png"><img alt="../_images/16.png" class="align-center" src="../_images/16.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/17.png"><img alt="../_images/17.png" class="align-center" src="../_images/17.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="stellar-mass-size-relation">
+<h2>Stellar-Mass Size Relation<a class="headerlink" href="#stellar-mass-size-relation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sersic-profile">
+<h3>Sersic Profile<a class="headerlink" href="#sersic-profile" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Higher Sersic <span class="math notranslate nohighlight">\(n\)</span> means a more “peaky” inner profile.</p></li>
+<li><p>Low Sersic <span class="math notranslate nohighlight">\(n\)</span> means flatter profile.</p></li>
+<li><p>ETGs are typically high <span class="math notranslate nohighlight">\(n\)</span> and have peaky inner profiles. Late type galaxies are flatter near the center and exponential in the outskirts.</p></li>
+</ul>
+</div>
+<div class="section" id="mass-size-plot">
+<h3>Mass-Size Plot<a class="headerlink" href="#mass-size-plot" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/19.png"><img alt="../_images/19.png" class="align-center" src="../_images/19.png" style="width: 500px;" /></a>
+</div>
+</div>
+<div class="section" id="color-environment-relation">
+<h2>Color-Environment Relation<a class="headerlink" href="#color-environment-relation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Redder galaxies are found in denser environments.</p></li>
+<li><p>Color doesn’t depend too much on environment, though!</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/20.png"><img alt="../_images/20.png" class="align-center" src="../_images/20.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -469,6 +648,13 @@ m = M + \mu + K
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">The Milky Way</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="statprops.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Statistical Properties of Galaxies</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
