@@ -4,4 +4,5 @@
 format: jb-book
 root: intro
 chapters:
-- file: pages/test
+- file: pages/mw
+- file: pages/globalprops
