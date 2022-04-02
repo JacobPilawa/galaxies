@@ -85,6 +85,14 @@ $$
 
 ```
  
+ * Some other valuable things to know:
+     * Total Mass for a given IMF: $M_{\star}=\int_{m_{1}}^{m_{2}} m \xi(m) \mathrm{d} m$
+     * Total luminosity for a given IMF: $L_{\star}=\int_{m_{1}}^{m_{2}} L(m) \xi(m) \mathrm{d} m$
+     * Main sequence lifetimes: $\tau =10^{10} \frac{M}{L}$
+     * Star formation rate: $\mathrm{SFR}=\frac{\mathrm{d} M}{\mathrm{~d} t}=\dot{M}$
+         * For example, a $\tau$-model has: $\frac{\mathrm{d} M}{\mathrm{~d} t}=C e^{-t / \tau}$
+ 
+
 
 ### Isochrones
 
@@ -169,4 +177,100 @@ $$
 ```
 
 ### Star Formation Histories
+
+* Consider the SFH of a simulated galaxy. Broadly, star formation rises rapidly, peaks near $z\sim 1$ and then declines towards the present. There are wiggles over time, too, which might be bursty events. 
+* **The increase in metallicity with time depends on the star formation history.**
+    * Note that star forming galaxies have spectra which are dominated by the main sequence. IN a rising history, the spectra are dominated by young blue stars.
+    * Even though $M>60 M_\odot$ stars are luminous, they are quite rare. Star forming galaxy spectra are typically characterized by $M>20 M_\odot$ stars. 
+
+```{image} ../figures/47.png
+:width: 500px
+:align: center
+```
+
+
+* We usually parametrize star formation histories with smooth functions. Some examples are:
+
+
+
+```{image} ../figures/46.png
+:width: 500px
+:align: center
+```
+
+
+* **Falling Star Formation History/Exponential Decay**
+
+$$
+\text{SFR} \propto e^{-t/\tau}
+$$
+* **Delayed Exponential**
+
+$$
+\text{SFR} \propto te^{-t/\tau}
+$$
+* **Rising SFH**
+
+$$
+\text{SFR}\propto t
+$$
+* **Rising $\tau$**
+
+$$
+\text{SFR}\propto e^{t/\tau}
+$$
+
+* A valuable thing to see are the fractional contributions to the spectra for various histories:
+
+```{image} ../figures/48.png
+:width: 600px
+:align: center
+```
+
+
+#### Measuring Galaxy Ages
+
+* One thing to note – much like with measuring masses, it's best to measure ages at long wavelengths where you are not dominated by few, luminous stars. 
+
+
+
+```{image} ../figures/49.png
+:width: 500px
+:align: center
+```
+
+
+
+## An Overview of Inputs and Outputs
+
+
+```{image} ../figures/50.png
+:width: 750px
+:align: center
+```
+
+
+
+## Fitting Broadband Photometry (SEDs)
+
+* A classic problem you run into when doing SED modeling is the degeneracy between age and dust. You need long wavelength information to break this degeneracy. 
+
+```{image} ../figures/51.png
+:width: 750px
+:align: center
+```
+
+```{image} ../figures/52.png
+:width: 750px
+:align: center
+```
+
+## Challenges to SED Modeling
+
+* Degeneracies between age and metallicity.
+* SPS models are not perfect, and various stages of stellar evolution are still not well understood (AGB phase, for example)
+* Dust-law, initial mass function, and star formation history typically have to be assumed
+* Massive stars with low mass-to-light will dominate the spectra
+
+
 
