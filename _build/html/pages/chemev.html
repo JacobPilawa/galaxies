@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -208,6 +210,78 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminology">
+   6.1. Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sources-of-heavy-elements">
+   6.2. Sources of Heavy Elements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-and-s-process-elements">
+   6.3. R and S Process Elements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metallicities-of-galaxies">
+   6.4. Metallicities of Galaxies
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gas-phase-metallicity">
+     6.4.1. Gas Phase Metallicity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quasar-absorption-line-studies">
+   6.5. Quasar Absorption Line Studies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#models-of-chemical-evolution">
+   6.6. Models of Chemical Evolution
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ingredients">
+     6.6.1. Ingredients
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#closed-box-model">
+     6.6.2. Closed Box Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#g-dwarf-problem-problems-of-the-closed-box-model">
+     6.6.3. G-Dwarf Problem/Problems of the Closed Box Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leaky-box-model">
+     6.6.4. Leaky Box Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#core-collapse-vs-type-ia-enrichment">
+   6.7. Core-Collapse vs. Type Ia Enrichment
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -220,6 +294,78 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminology">
+   6.1. Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sources-of-heavy-elements">
+   6.2. Sources of Heavy Elements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-and-s-process-elements">
+   6.3. R and S Process Elements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metallicities-of-galaxies">
+   6.4. Metallicities of Galaxies
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gas-phase-metallicity">
+     6.4.1. Gas Phase Metallicity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quasar-absorption-line-studies">
+   6.5. Quasar Absorption Line Studies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#models-of-chemical-evolution">
+   6.6. Models of Chemical Evolution
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ingredients">
+     6.6.1. Ingredients
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#closed-box-model">
+     6.6.2. Closed Box Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#g-dwarf-problem-problems-of-the-closed-box-model">
+     6.6.3. G-Dwarf Problem/Problems of the Closed Box Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leaky-box-model">
+     6.6.4. Leaky Box Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#core-collapse-vs-type-ia-enrichment">
+   6.7. Core-Collapse vs. Type Ia Enrichment
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -228,6 +374,255 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="chemical-evolution">
 <h1><span class="section-number">6. </span>Chemical Evolution<a class="headerlink" href="#chemical-evolution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="terminology">
+<h2><span class="section-number">6.1. </span>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In most work, you see something like <span class="math notranslate nohighlight">\([X/H]\)</span>. This means “the number of atoms in X relative to the number of atoms of hydrogen, with the brackets denoting relative to the sun:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+[\mathrm{Fe} / \mathrm{H}]=\log _{10}\left(\frac{N(F e)}{N(H)}\right)_{*}-\log _{10}\left(\frac{N(F e)}{N(H)}\right)_{\odot}
+\]</div>
+<ul class="simple">
+<li><p>Another example:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+[\mathrm{M} / \mathrm{H}]=\log _{10}\left(\frac{N(\text { metals })}{N(H)}\right)_{\star}-\log _{10}\left(\frac{N(F e)}{N(H)}\right)_{\odot}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+[\mathrm{M} / \mathrm{H}]=\log _{10}\left(\frac{n_{m}}{n_{H}} / \frac{n_{m}}{n_{H} \odot}\right)=\log _{10}\left(\frac{(Z / X)_{\star}}{(Z / X)_{\odot}}\right)
+\]</div>
+<ul class="simple">
+<li><p>For the Sun, we have:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(X_\odot = 0.734\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Y_\odot = 0.25\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Z_\odot\)</span> = 0.016</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="sources-of-heavy-elements">
+<h2><span class="section-number">6.2. </span>Sources of Heavy Elements<a class="headerlink" href="#sources-of-heavy-elements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Stars return a substantial fraction of their initial masses to the ISM at the end of their lifetiems through stellar winds and SN explosions.</p>
+<ul>
+<li><p><strong>Low mass stars: (<span class="math notranslate nohighlight">\(M&lt;8M_\odot\)</span>):</strong> He, C, N, O ejected during AGB phase</p></li>
+<li><p><strong>Massive stars: (<span class="math notranslate nohighlight">\(M&gt;8M_\odot\)</span>)</strong>: Produce more O and Mg compared to Fe. Enirch the ISM via stellar winds and final explosions as core-collpase SN (Type II)</p></li>
+<li><p><strong>Type Ia SN:</strong> C/O white dwarf accretes material from a clsoe companion and explodes once it reaches the Chandrasekhar limiting mass. Produces mainly Fe and O.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="r-and-s-process-elements">
+<h2><span class="section-number">6.3. </span>R and S Process Elements<a class="headerlink" href="#r-and-s-process-elements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>R-process elements are formed in rapid neutron capture where neutrons get added to nucelus faster than the beta decay timescale.</p>
+<ul>
+<li><p>Happens in SN explosions, BH/neutron star mergers</p></li>
+</ul>
+</li>
+<li><p>S-process is formed in AGB stars and in massive stars in the He burning core and convective C-burning shell, just prior to SN explosions</p></li>
+</ul>
+</div>
+<div class="section" id="metallicities-of-galaxies">
+<h2><span class="section-number">6.4. </span>Metallicities of Galaxies<a class="headerlink" href="#metallicities-of-galaxies" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/60.png"><img alt="../_images/60.png" class="align-center" src="../_images/60.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Star Forming Galaxies</p>
+<ul>
+<li><p>Measure gas-phase metallicty mostly through oxygen abundances</p></li>
+<li><p>Measured from emission lines originating in star forming regions</p></li>
+<li><p>Primarily measured for star-forming galxies</p></li>
+<li><p>This measures the instantaneous metallicity in star-forming regions</p></li>
+</ul>
+</li>
+<li><p>Quiescent Galaxies</p>
+<ul>
+<li><p>General combined Mg and Fe abundance</p></li>
+<li><p>Measured from metal absorption lines in stellar atmospheres</p></li>
+<li><p>Reflects the ISM metallicities at the time the stars were formed</p></li>
+</ul>
+</li>
+<li><p>Notes</p>
+<ul>
+<li><p>Need a combination of Balmer and metal lines to break age/metallicity degeneracy</p></li>
+<li><p>Doppler broadening makes individual line measurements impossible</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="gas-phase-metallicity">
+<h3><span class="section-number">6.4.1. </span>Gas Phase Metallicity<a class="headerlink" href="#gas-phase-metallicity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Direct T method measures oxygen abundance by measuring line strengths of oxygen directly to measure the tempearture and we get <span class="math notranslate nohighlight">\(n\)</span> of oxygen directly</p></li>
+<li><p>Strong line method: Combinating of strong lines correlated with oxygen abundance can be used. Calibration has lots of scatter.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="quasar-absorption-line-studies">
+<h2><span class="section-number">6.5. </span>Quasar Absorption Line Studies<a class="headerlink" href="#quasar-absorption-line-studies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>High redshift neutral hydrogen clouds along the line of sight to quasars allow us to probe chemical evolution of the Universe</p></li>
+<li><p>Finding Ly<span class="math notranslate nohighlight">\(\alpha\)</span> absoprtion gives us redshift + other metal lines we can measure</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/61.png"><img alt="../_images/61.png" class="align-center" src="../_images/61.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="models-of-chemical-evolution">
+<h2><span class="section-number">6.6. </span>Models of Chemical Evolution<a class="headerlink" href="#models-of-chemical-evolution" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ingredients">
+<h3><span class="section-number">6.6.1. </span>Ingredients<a class="headerlink" href="#ingredients" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Initial conditions</p>
+<ul>
+<li><p>Pre-enriched material or primordial</p></li>
+<li><p>Closed box or open system?</p></li>
+</ul>
+</li>
+<li><p>Birthrate function: <span class="math notranslate nohighlight">\(B(M,t) = \psi(t) \xi(m)\)</span></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\psi(t)\)</span> is the star formation rate history set by the KS relation <span class="math notranslate nohighlight">\(\psi(t) \propto \sigma_{gas}^n\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\xi(m)\)</span> is the IMF</p></li>
+</ul>
+</li>
+<li><p>Yields from CCSN depend on stellar mass and metallicity</p></li>
+</ul>
+</div>
+<div class="section" id="closed-box-model">
+<h3><span class="section-number">6.6.2. </span>Closed Box Model<a class="headerlink" href="#closed-box-model" title="Permalink to this headline">¶</a></h3>
+<p>Let’s first define some variables. We have:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\psi(t)\)</span>: SFR in solar masses per year</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{g}(t)\)</span> : gas mass at time <span class="math notranslate nohighlight">\(t\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(M_s(t)\)</span>: Stellar mass at time <span class="math notranslate nohighlight">\(t\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(M_t(t) = M_g(t) + M_s(t)\)</span>: Total mass at time <span class="math notranslate nohighlight">\(t\)</span> which is constant</p></li>
+<li><p><span class="math notranslate nohighlight">\(Z(t)\)</span>: fraction of metals in the gas</p></li>
+</ul>
+<p>Now, let’s discuss initial conditions:</p>
+<ul class="simple">
+<li><p>At <span class="math notranslate nohighlight">\(t=0\)</span>, <span class="math notranslate nohighlight">\(M_t(0) = M_g(0)\)</span> \textbf{and} <span class="math notranslate nohighlight">\(Z(0) = 0\)</span>.</p></li>
+</ul>
+<p>We have a few other assumptions:</p>
+<ul class="simple">
+<li><p>No gas flow in or out of the system: <span class="math notranslate nohighlight">\(\frac{\mathrm{d}M_t}{\mathrm{d}t} = 0\)</span>.</p></li>
+<li><p>Instantaneous recycling approximation – no delay time between enrichment and recycling to gas reservoir.</p></li>
+<li><p>We basically have an IMF with two mass bins: low mass stars keep stellar mass locked up, high mass stars return the mass to the system. (Recycling of material comes <strong>only</strong> from high mass stars. Low mass stars retain the mass).</p></li>
+</ul>
+<p>We can calculate the stellar mass at time <span class="math notranslate nohighlight">\(t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+    M_s(t) = \int_0^t \alpha \psi(t^\prime)\mathrm{d}t^\prime
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> defines the fraction of mass in long-lived stars. Another way to write this same equation:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{\mathrm{d}M_t}{\mathrm{d}t} = \alpha \psi
+\]</div>
+<p>We can write down:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = \underbrace{-Z \psi}_\text{removal of metals from system} + \underbrace{\left(1-\alpha\right) Z\psi}_\text{contribution to metals from high mass stars (enrichment)} + \underbrace{q \psi}_\text{}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(q \equiv \frac{\text{metals returned}}{\text{total mass}}\)</span> ratio of mass in metals returned to that of the total mass at a given time. In other words, at some time <span class="math notranslate nohighlight">\(t\)</span> massive stars are returning metals to the system, which has some total mass at time <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>We can re-write the left hand side of the equation above:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = q\psi - \alpha Z\psi = \psi\left(q-\alpha Z\right)
+\]</div>
+<p>Now, we are going to use a little black magic to expand this…</p>
+<p>Let’s start with <strong>equation 1</strong></p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}M_s} = \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} \frac{\mathrm{d}t}{\mathrm{d}M_{s}} = \psi(q-\alpha Z)\frac{1}{\alpha \psi} = \frac{q}{\alpha} - Z = y-Z
+\]</div>
+<p>Here, we define <span class="math notranslate nohighlight">\(y\equiv \frac{q}{\alpha}\)</span>. We can now define <strong>Equation 2</strong>, noting that <span class="math notranslate nohighlight">\(\mathrm{d}M_g = - \mathrm{d}M_s\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}M_s} = M_g \frac{\mathrm{d} Z}{\mathrm{d} M_{s}} + Z \frac{\mathrm{d}M_{g}}{\mathrm{d}M_s} = -M_g \frac{\mathrm{d}Z}{\mathrm{d}M_g} - Z = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}} - Z
+\]</div>
+<p>Let’s equate <strong>equation 1</strong> and <strong>equation 2</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+    y-Z = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}} - Z
+\]</div>
+<p>Let’s simplify:</p>
+<div class="math notranslate nohighlight">
+\[
+    y = - \frac{\mathrm{d}Z}{\mathrm{d}\ln{M_g}}
+\]</div>
+<p>Integrate:</p>
+<div class="math notranslate nohighlight">
+\[
+    \int_0^t \mathrm{d} Z = -y \int_0^t \mathrm{d}\ln{M_g}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    Z(t) - Z(0) = -y\left(\ln{M_g(t)} - \ln{M_g(0)}\right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    \boxed{Z(t) = -y \ln{\frac{M_g(t)}{M_t}} = - y \ln{F_g(t)}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_g\)</span> is the gas fraction at time <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>We end up wanting to observe the metallicity distribution <span class="math notranslate nohighlight">\(\frac{\mathrm{d}N}{\mathrm{d}Z}\)</span>.</p>
+</div>
+<div class="section" id="g-dwarf-problem-problems-of-the-closed-box-model">
+<h3><span class="section-number">6.6.3. </span>G-Dwarf Problem/Problems of the Closed Box Model<a class="headerlink" href="#g-dwarf-problem-problems-of-the-closed-box-model" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>While the closed box model is nice, it drastically over predicts the number of low metallicity stars.</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/62.png"><img alt="../_images/62.png" class="align-center" src="../_images/62.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p><strong>It also cannot predict the observed mass-metallicty relation.</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/63.png"><img alt="../_images/63.png" class="align-center" src="../_images/63.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="leaky-box-model">
+<h3><span class="section-number">6.6.4. </span>Leaky Box Model<a class="headerlink" href="#leaky-box-model" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A leaky box model much better represents the data where we allow for gas inflow and outflow, as well as non-instantaneous recylcing</p></li>
+<li><p><strong>We have some observation evidence of infall from lyman alpha blobs at high redshift, high velocity clouds, and CGM lines being redshifted</strong></p>
+<ul>
+<li><p>The Lya blobs might be gas accretion onto DM haloes at high <span class="math notranslate nohighlight">\(z\)</span>?</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/64.png"><img alt="../_images/64.png" class="align-center" src="../_images/64.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>We see accretion in simulations all the time, though.</p>
+<ul>
+<li><p>The accretion rate onto galaxies is higher at higher redshift and for migher mass halos.</p></li>
+<li><p>Hot accretion is more dominant at later times and in more massive haloes; it’s also more quasi-spherical</p></li>
+<li><p>Cold accretion is dominant in lower mass galaxies and is directed along filaments.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="core-collapse-vs-type-ia-enrichment">
+<h2><span class="section-number">6.7. </span>Core-Collapse vs. Type Ia Enrichment<a class="headerlink" href="#core-collapse-vs-type-ia-enrichment" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/65.png"><img alt="../_images/65.png" class="align-center" src="../_images/65.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Core collapse supernovae produce <span class="math notranslate nohighlight">\(\alpha\)</span> elements like Mg, Oxygen and relatively low Fe yields. CCSN happen shortly after star formation and thus can be thought of as instantly enriching the ISM.</p></li>
+<li><p>Type Ia SN originate from low mass stars and thus occur over a range of timescales. Thus instantaneous recycling is not a good approximation here.</p>
+<ul>
+<li><p>This distribution is given by the <strong>delay time distribution</strong> (DTD), which gives the Ia supernova rate as a function of time following a burst of star formation.</p></li>
+</ul>
+</li>
+<li><p>For various models, we can plot the tracks stars should fall in for a given IMF, inflow/outflow rates, star formation histories, etc., and we get something like:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/66.png"><img alt="../_images/66.png" class="align-center" src="../_images/66.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>it turns out you need both inflows and outflows properly tuned to actually match the data:</p></li>
+<li><p>From my notes;</p>
+<ul>
+<li><p>Initial plateau: “high-alpha sequence.” Turnover: “knee.” Secondary plateau. This is a diagram that basically traces the various enrichments for Type Ia vs. Type II SN. To get high alpha sequence, we need CCSN. This creates a high alpha population into the ISM. At some time, ISM gets enriched with iron and we have a drop-off in the ratio. Then, we settle in equilibrium. Various aspects of this diagram are sensitive to various SPS parameters. More high mass stars means more CC SN and thus high plateau. The exact shape and slope, location, etc., are set by the balance of star formation rate and inflow/outflow.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/67.png"><img alt="../_images/67.png" class="align-center" src="../_images/67.png" style="width: 600px;" /></a>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
