@@ -226,6 +226,38 @@
   <a class="reference internal nav-link" href="#star-formation-rate-indicators">
    5.2. Star Formation Rate Indicators
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-emission">
+     5.2.1. UV Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recombination-lines">
+     5.2.2. Recombination Lines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#far-ir-emission">
+     5.2.3. Far IR Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#x-ray-emission">
+     5.2.4. X-ray Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radio-emission">
+     5.2.5. Radio Emission
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#molecular-gas-in-galaxies">
+   5.3. Molecular Gas in Galaxies
+  </a>
  </li>
 </ul>
 
@@ -262,6 +294,38 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#star-formation-rate-indicators">
    5.2. Star Formation Rate Indicators
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-emission">
+     5.2.1. UV Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recombination-lines">
+     5.2.2. Recombination Lines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#far-ir-emission">
+     5.2.3. Far IR Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#x-ray-emission">
+     5.2.4. X-ray Emission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#radio-emission">
+     5.2.5. Radio Emission
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#molecular-gas-in-galaxies">
+   5.3. Molecular Gas in Galaxies
   </a>
  </li>
 </ul>
@@ -304,7 +368,78 @@ R &gt; \sqrt{\frac{v_s^2}{G\rho}}
 </div>
 <div class="section" id="star-formation-rate-indicators">
 <h2><span class="section-number">5.2. </span>Star Formation Rate Indicators<a class="headerlink" href="#star-formation-rate-indicators" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fundamental question: My galaxy has massive stars that I cannot necessarily observe. Can we find indicators for ongoing star formation?</p></li>
+<li><p>A really excellent page is <a class="reference external" href="https://ned.ipac.caltech.edu/level5/Sept12/Calzetti/Calzetti1_2.html">here</a>.</p></li>
+</ul>
 <a class="reference internal image-reference" href="../_images/54.png"><img alt="../_images/54.png" class="align-center" src="../_images/54.png" style="width: 800px;" /></a>
+<div class="section" id="uv-emission">
+<h3><span class="section-number">5.2.1. </span>UV Emission<a class="headerlink" href="#uv-emission" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>UV is really great for massive stars greater than about <span class="math notranslate nohighlight">\(M&gt;3 M_\odot\)</span>. These are MS stars with <span class="math notranslate nohighlight">\(T&gt; 10,000\)</span>K or so, and lifetimes of 10-100 Million years.</p></li>
+<li><p>We can use this emission (corrected for dust with a <span class="math notranslate nohighlight">\(\beta\)</span> slope) to estimate the SFR of a galaxy.</p></li>
+<li><p>This is because O and B stars set the UV slope, and these are sensitive to recent star formation.</p></li>
+<li><p>Assumptions:</p>
+<ul>
+<li><p>Correct for <span class="math notranslate nohighlight">\(\beta\)</span> slope</p></li>
+<li><p>Need to assume an IMF</p></li>
+<li><p>Then you can use the <strong>Kennicutt SFR relations:</strong></p>
+<ul>
+<li><p>SFR <span class="math notranslate nohighlight">\(\propto L_\nu\)</span> where <span class="math notranslate nohighlight">\(\nu\)</span> is over the UV continuum.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/55.png"><img alt="../_images/55.png" class="align-center" src="../_images/55.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="recombination-lines">
+<h3><span class="section-number">5.2.2. </span>Recombination Lines<a class="headerlink" href="#recombination-lines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Balmer emission lines lower <span class="math notranslate nohighlight">\(n=2\)</span> state originate from HII regions and from stellar atmospheres.</p></li>
+<li><p>Only really massive stars <span class="math notranslate nohighlight">\(M&gt;15M_\odot\)</span> can actually ionize the surrounding medium.</p></li>
+<li><p>The continuum will be set by the stars, but the emission lines are only from the most massive ones.</p></li>
+<li><p><strong>We are incredibly sensitive to the IMF choice since we need the most massive stars for H<span class="math notranslate nohighlight">\(\alpha\)</span> for example.</strong></p></li>
+<li><p>Assumptions:</p>
+<ul>
+<li><p>Assume a metallicty</p></li>
+<li><p>Assume dust correction</p></li>
+<li><p>Assume we know the IMF</p></li>
+<li><p>Binarity</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/56.png"><img alt="../_images/56.png" class="align-center" src="../_images/56.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="far-ir-emission">
+<h3><span class="section-number">5.2.3. </span>Far IR Emission<a class="headerlink" href="#far-ir-emission" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Far IR emission <span class="math notranslate nohighlight">\((&gt;10 \mu m\)</span> or so) comes mostly from attenuated UV light from massive stars and serves as a SFR indicator.</p></li>
+<li><p>We need to combine the UV and FIR SFRs and can convert total IR luminosities to SFRs.</p></li>
+</ul>
+</div>
+<div class="section" id="x-ray-emission">
+<h3><span class="section-number">5.2.4. </span>X-ray Emission<a class="headerlink" href="#x-ray-emission" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>High mass x-ray binaries have a very short lifetime (~20 million years) and their X-ray luminosity can thus serve as SFR indicators</p></li>
+</ul>
+</div>
+<div class="section" id="radio-emission">
+<h3><span class="section-number">5.2.5. </span>Radio Emission<a class="headerlink" href="#radio-emission" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Free-free emission from relativistic electrons dominates spectra near 100 GHz as long as it can be disentangled from cold dust emission.</p></li>
+<li><p>Hydrogen gets ionized from massive stars and radio recombination lines cascade.</p></li>
+<li><p>This portion of the spectrum is free of dust effects and thus is a gold standard for SFR indicators. It comes without dust and directly from HII regions.</p></li>
+<li><p>``This is understandable because massive star-formation activities like supernova explosions, their shocks, and remnants increase the number density of high-energy cosmic-ray electrons (CREs) and/or accelerate them, on one hand, and amplify the turbulent magnetic field strength, on the other hand. The net effect of these processes is a strong nonthermal emission in or around star-forming regions.’’</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="molecular-gas-in-galaxies">
+<h2><span class="section-number">5.3. </span>Molecular Gas in Galaxies<a class="headerlink" href="#molecular-gas-in-galaxies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Another way to trace star formation is to trace the amount of gas available in galaxies.</p></li>
+<li><p>Star formation happens in H2 clouds, but these are notoriously hard to observe.</p></li>
+</ul>
 </div>
 </div>
 
