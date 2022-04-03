@@ -92,13 +92,42 @@ And the Jeans mass is simply the mass contained inside a sphere of the Jeans len
 
 ## Molecular Gas in Galaxies
 
+
+### The Kennicutt-Schmidt Law
+
 * Another way to trace star formation is to trace the amount of gas available in galaxies. 
 * Star formation happens in H2 clouds, but these are notoriously hard to observe. 
+* We want to measure $\Sigma_{gas} = \Sigma_{H2} + \Sigma_{HI}$ but typically have to measure $\Sigma_{gas} = \Sigma_{HI} + \alpha_{CO}I_{CO}$ to approximate the H2 content. 
+    * HI is extremely easy to measure from the 21 cm line. 
+    * $\alpha$  is calibrated locally and extrapolated outward
+    * Note that $\alpha$ is metallicity dependent. 
+* Even more common is to measure dust content and convert dust to CO content since dust is really easily observable. 
+
+```{image} ../figures/57.png
+:width: 600px
+:align: center
+```
 
 
 
+* **The reason we care about measuring gas is because of the Kennicutt-Schmidt Law**: 
 
+$$
+\Sigma_{SFR} \propto \Sigma_{gas}^n \text{ where } n = 1.4
+$$
 
+```{image} ../figures/59.png
+:width: 600px
+:align: center
+```
+
+### Summary
+
+* Stars form in dense molecular clouds of molecular hydrogen (HI doesn't get dense enough).
+* Star formation rates can be measured from different indicators, each with pros and cons.
+* The CO-H$_2$ conversion depends on the metallicity since, at lower metallicity, CO can be photodissociated. 
+* The star formation rate surface density scales with molecular gas surface density.
+* The star formation efficiency is thought to be set by turbulence driven feedback in GMCs. 
 
 
 
