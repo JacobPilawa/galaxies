@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -229,8 +231,67 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#section-1">
-   9.1. Section 1
+  <a class="reference internal nav-link" href="#disk-properties">
+   9.1. Disk Properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bulge-properties">
+   9.2. Bulge Properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extent-of-stellar-and-gas-disk-rotation-curves">
+   9.3. Extent of Stellar and Gas Disk, Rotation Curves
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-tully-fisher-relation">
+   9.4. The Tully-Fisher Relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation">
+     9.4.1. Derivation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spiral-structure">
+   9.5. Spiral Structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-of-spirals">
+     9.5.1. Types of Spirals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trailing-and-leading-arms">
+     9.5.2. Trailing and Leading Arms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#origin-of-spiral-arms">
+     9.5.3. Origin of Spiral Arms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#barred-spirals">
+   9.6. Barred Spirals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#disks-at-high-redshift">
+   9.7. Disks at High Redshift
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-disk-galaxies">
+   9.8. Summary of Disk Galaxies
   </a>
  </li>
 </ul>
@@ -254,8 +315,67 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#section-1">
-   9.1. Section 1
+  <a class="reference internal nav-link" href="#disk-properties">
+   9.1. Disk Properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bulge-properties">
+   9.2. Bulge Properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extent-of-stellar-and-gas-disk-rotation-curves">
+   9.3. Extent of Stellar and Gas Disk, Rotation Curves
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-tully-fisher-relation">
+   9.4. The Tully-Fisher Relation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivation">
+     9.4.1. Derivation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spiral-structure">
+   9.5. Spiral Structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-of-spirals">
+     9.5.1. Types of Spirals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trailing-and-leading-arms">
+     9.5.2. Trailing and Leading Arms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#origin-of-spiral-arms">
+     9.5.3. Origin of Spiral Arms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#barred-spirals">
+   9.6. Barred Spirals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#disks-at-high-redshift">
+   9.7. Disks at High Redshift
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-disk-galaxies">
+   9.8. Summary of Disk Galaxies
   </a>
  </li>
 </ul>
@@ -269,8 +389,239 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="disk-galaxies">
 <h1><span class="section-number">9. </span>Disk Galaxies<a class="headerlink" href="#disk-galaxies" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="section-1">
-<h2><span class="section-number">9.1. </span>Section 1<a class="headerlink" href="#section-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="disk-properties">
+<h2><span class="section-number">9.1. </span>Disk Properties<a class="headerlink" href="#disk-properties" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Often, the surface brightness profiles are not well fit by single componenets – there’s typically a central bulge and an outer disk which need to be fit separately.</p></li>
+<li><p>It’s approximately exponential beyond the bulge, though.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/82.png"><img alt="../_images/82.png" class="align-center" src="../_images/82.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Random Facts:</p>
+<ul>
+<li><p>There’s a <strong>mass-size relation</strong> More massive disk galaxies are larger</p></li>
+<li><p>Older disks are more massive and brighter</p></li>
+<li><p>Older, more massive disks rotate faster <span class="math notranslate nohighlight">\((\sim 150\)</span> km/s)</p></li>
+<li><p>Brighter, more massive galaxies are more metal rich (approximately solar)</p></li>
+<li><p>More metal rich disks also rotate faster</p></li>
+<li><p><strong>Color Gradients:</strong></p>
+<ul>
+<li><p>Colors become bluer with increase radius/decreasing surface brightness</p></li>
+<li><p>Later type galaxies are bluer overall</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="bulge-properties">
+<h2><span class="section-number">9.2. </span>Bulge Properties<a class="headerlink" href="#bulge-properties" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>There are two types of bulges: classical and pseudo-bulges:</p>
+<ul>
+<li><p>Classical bulges typically live in disk galaxies with smooth light distributions</p>
+<ul>
+<li><p>They are somehwat similar to elliptical galaxies</p></li>
+<li><p>Often do not rotate</p></li>
+</ul>
+</li>
+<li><p>Pseudo-bulges typically live in disk galaxies with spiral structure and nuclear star formation</p>
+<ul>
+<li><p>Light is typically dominated by young stars</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/83.png"><img alt="../_images/83.png" class="align-center" src="../_images/83.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Pseudo-bulges</p>
+<ul>
+<li><p>Typically have lower Sersic <span class="math notranslate nohighlight">\(n\)</span> , magnitude, and surface brightness</p></li>
+<li><p>Are rapidly rotating</p></li>
+<li><p>Have central star formation (see image below)</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/84.png"><img alt="../_images/84.png" class="align-center" src="../_images/84.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="extent-of-stellar-and-gas-disk-rotation-curves">
+<h2><span class="section-number">9.3. </span>Extent of Stellar and Gas Disk, Rotation Curves<a class="headerlink" href="#extent-of-stellar-and-gas-disk-rotation-curves" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>HI is optically thin (you can see all the mass) and is typically 2-3 times more extended than the disk itself</p></li>
+<li><p>This makes HI a great way to probe the dark matter halo, and allows us to measure rotating curves to very large radii</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/85.png"><img alt="../_images/85.png" class="align-center" src="../_images/85.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/86.png"><img alt="../_images/86.png" class="align-center" src="../_images/86.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>And here are Rubin’s rotation curves from H<span class="math notranslate nohighlight">\(\alpha\)</span>:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/87.png"><img alt="../_images/87.png" class="align-center" src="../_images/87.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="the-tully-fisher-relation">
+<h2><span class="section-number">9.4. </span>The Tully-Fisher Relation<a class="headerlink" href="#the-tully-fisher-relation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Measuring maximum rotational velocities (aka measuring the dark matter mass), corrected for inclination effects, gives a scaling relation between rotational velocity and luminosity: <strong>The Tully Fisher Relation!</strong></p></li>
+<li><p>In practice, you typically measure the velocities from HI, get cepheids for distances.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+L \propto V_{max}^\alpha \text{ for } \alpha=3-4
+\]</div>
+<a class="reference internal image-reference" href="../_images/88.png"><img alt="../_images/88.png" class="align-center" src="../_images/88.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Another scaling relation was found between mass (instead of luminosity), and this is called the <strong>Baryonic Tully-Fisher relation</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/89.png"><img alt="../_images/89.png" class="align-center" src="../_images/89.png" style="width: 600px;" /></a>
+<div class="section" id="derivation">
+<h3><span class="section-number">9.4.1. </span>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h3>
+<p>In much the same way we could get close to the Fundamnetal Plane from the virial theorem, we can get close to the Tully-Fisher relation.</p>
+<p>The empirical version is <span class="math notranslate nohighlight">\(L \propto v_{max}^{3.4}\)</span>. Let’s start with the virial theorem:</p>
+<div class="math notranslate nohighlight">
+\[
+    2 \langle K \rangle = - \langle U \rangle 
+\]</div>
+<p>Following last time:</p>
+<div class="math notranslate nohighlight">
+\[
+    \langle K \rangle = \frac12 M \langle v^2 \rangle \rightarrow \frac12 C_1 M \langle v_{max}^2 \rangle
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    U = -C_2 \frac{G M^2}{r_e}
+\]</div>
+<p>We now have:</p>
+<div class="math notranslate nohighlight">
+\[
+    M C_1 v_{max}^2 = C_2 \frac{GM^2}{r_e} \rightarrow M = \frac{r_e v_{max}^2}{C_1 C_2 G}
+\]</div>
+<p>Do the same algebraic trick as last time, multiply by the mass-to-light ratio:</p>
+<div class="math notranslate nohighlight">
+\[
+    L = \left(\frac{M}{L}\right)^{-1} \frac{r_e v_{max}^2}{C_1 C_2 G}
+\]</div>
+<p>We now <strong>assert a constant mass-to-light</strong> ratio:</p>
+<div class="math notranslate nohighlight">
+\[
+    L \propto r_e v_{max}^2
+\]</div>
+<p>We make another assertion (though it’s egregious). Let’s say we have an exponential surface brightness profile:</p>
+<div class="math notranslate nohighlight">
+\[
+    I(r) = I_0 e^{\frac{-r}{r_0}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(r_0 \propto r_e\)</span>. Taking this SBP, we find:</p>
+<div class="math notranslate nohighlight">
+\[
+    L_{tot} \propto 2\pi I_0 r_0^2
+\]</div>
+<p>It turns out there is a thing called <strong>Freeman’s Law</strong>, which says there is an approximate constant surface brightness for disk galaxies. Using this as an assertion:</p>
+<p>Thus,</p>
+<div class="math notranslate nohighlight">
+\[
+    L \propto r_0^2 \propto r_e^2 \rightarrow r_e \propto \sqrt{L}
+\]</div>
+<p>Returning to before:</p>
+<div class="math notranslate nohighlight">
+\[
+    L \propto \sqrt{L} V_{max}^2 \rightarrow \boxed{L \propto v_{max}^4}
+\]</div>
+<p><strong>The Tully-Fisher is powerful for the same reasons as the Fundametnal plane.</strong></p>
+</div>
+</div>
+<div class="section" id="spiral-structure">
+<h2><span class="section-number">9.5. </span>Spiral Structure<a class="headerlink" href="#spiral-structure" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Spiral arms are most prominent at wavelengths which probe recent star formation.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/90.png"><img alt="../_images/90.png" class="align-center" src="../_images/90.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Distribution of material</p>
+<ul>
+<li><p>Dust lanes, CO are typically found on the inner edge of spiral arms – the sights of ongoing star formation! Stars will be formed on the inner edge and then drift behind, making up the actual arms themselves</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/91.png"><img alt="../_images/91.png" class="align-center" src="../_images/91.png" style="width: 600px;" /></a>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* HI traces the spirals themselves and are the reservoirs for future star formation
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/92.png"><img alt="../_images/92.png" class="align-center" src="../_images/92.png" style="width: 600px;" /></a>
+<div class="section" id="types-of-spirals">
+<h3><span class="section-number">9.5.1. </span>Types of Spirals<a class="headerlink" href="#types-of-spirals" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Grand design with two strong spiral arms (20%) vs. multiple arm spirals vs. flocculent spirals (with lots of chaos, no clear spiral arms but spiral structure)</p>
+<ul>
+<li><p>Flocculent arms/spirals are associated with ongoing star formation</p></li>
+</ul>
+</li>
+<li><p>Depends on wavelength!</p></li>
+</ul>
+</div>
+<div class="section" id="trailing-and-leading-arms">
+<h3><span class="section-number">9.5.2. </span>Trailing and Leading Arms<a class="headerlink" href="#trailing-and-leading-arms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Projection effects make it hard to know the rotation direction – need to measure distance to front and back of spiral, or use dust obscuartion to infer the rotation direction and thus the leading or trailing arms</p></li>
+</ul>
+</div>
+<div class="section" id="origin-of-spiral-arms">
+<h3><span class="section-number">9.5.3. </span>Origin of Spiral Arms<a class="headerlink" href="#origin-of-spiral-arms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Flocculent structure could be the result of differential rotation, but stable spiral arms seen in grand design spirals cannot be due to differential rotation alone. The arms would fragment and dissolve much faster than we see.</p></li>
+<li><p>Instead, we think of spiral density waves just like in a traffic jam</p>
+<ul>
+<li><p>Maybe these originate in asymmetries in the potential which has been seen in simulation</p></li>
+<li><p>Maybe it’s induced in galaxy encounters</p></li>
+</ul>
+</li>
+<li><p>Density Wave Theory</p>
+<ul>
+<li><p>Stars form on inner arms (so more dust and molecular gas). While the new  stars travel through the arms, the molecular gas gets dissociated (into HI).  The most massive (OB) stars die out fast, before the stars move out of the  arms. Thus you see star formation primarily in the arms.</p></li>
+<li><p>The gas is more collisional than the stars, and thus the gas is swept up into regions more easily than stars. Stars form on inner arms (so more dust and molecular gas). While the new stars travel through the arms, the molecular gas gets dissociated (into HI). The most massive (OB) stars die out fast, before the stars move out of the arms. Thus you see star formation primarily in the arms.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="barred-spirals">
+<h2><span class="section-number">9.6. </span>Barred Spirals<a class="headerlink" href="#barred-spirals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>General facts</p>
+<ul>
+<li><p>Common in ⅓ to ⅔ of spirals</p></li>
+<li><p>Isophotes not fit by ellipses, more retangular</p></li>
+<li><p>Probably flat in the disk plane</p></li>
+<li><p>Bars are straight and stars stay in the bar</p></li>
+<li><p>Bars rotate along with the pattern speed</p></li>
+<li><p>Bars are <strong>not</strong> density waves but density waves likely shaped orbits of the inner stars</p></li>
+<li><p>Bars can help drive density waves in the disk and maintain spiral structure</p></li>
+<li><p>Bars are long-lived, easy to form in simulations</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/93.png"><img alt="../_images/93.png" class="align-center" src="../_images/93.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="disks-at-high-redshift">
+<h2><span class="section-number">9.7. </span>Disks at High Redshift<a class="headerlink" href="#disks-at-high-redshift" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>At higher <span class="math notranslate nohighlight">\(z\)</span>, star forming disks are much more irregular and clumpy</p></li>
+<li><p>Despite the optical morphology being lumpy, the actual underlying mass is quite smooth</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/94.png"><img alt="../_images/94.png" class="align-center" src="../_images/94.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p><strong>The Tully Fisher</strong> relationship seems to hold at higher redshifts – the slope simply follows from dark matter halo properties.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/95.png"><img alt="../_images/95.png" class="align-center" src="../_images/95.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="summary-of-disk-galaxies">
+<h2><span class="section-number">9.8. </span>Summary of Disk Galaxies<a class="headerlink" href="#summary-of-disk-galaxies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The surface brightness profiles are approximately exponential</p></li>
+<li><p>More massive disks are on average more metal-rich, older, rotate faster, redder, and larger</p></li>
+<li><p>The outer parts of disks are generally bluer and of lower metallicity than the inner part</p></li>
+<li><p>Disk galaxies have flat rotation curves</p></li>
+<li><p>Disk galaxies fall on the Tully-Fisher relation, a tight correlation between luminosity/mass and rotational velocity.</p></li>
+</ul>
 </div>
 </div>
 
