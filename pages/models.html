@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -51,6 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="12. Galaxies Over Cosmic Time" href="cosmic.html" />
     <link rel="prev" title="10. Clusters and Groups of Galaxies" href="clusters.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -151,6 +154,11 @@
    11. Galaxy Models
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cosmic.html">
+   12. Galaxies Over Cosmic Time
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -233,6 +241,56 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   11.1. Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#semi-analytic-modeling">
+   11.2. Semi-Analytic Modeling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hydrodynamical-simulations">
+   11.3. Hydrodynamical Simulations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comparison-to-data">
+   11.4. Comparison to Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galaxy-stellar-mass-function">
+     11.4.1. Galaxy Stellar Mass Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-forming-main-sequence">
+     11.4.2. Star Forming Main Sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mass-metallicity-relation">
+     11.4.3. Mass-Metallicity Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cold-gas-fraction">
+     11.4.4. Cold Gas Fraction
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -245,6 +303,56 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   11.1. Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#semi-analytic-modeling">
+   11.2. Semi-Analytic Modeling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hydrodynamical-simulations">
+   11.3. Hydrodynamical Simulations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comparison-to-data">
+   11.4. Comparison to Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galaxy-stellar-mass-function">
+     11.4.1. Galaxy Stellar Mass Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-forming-main-sequence">
+     11.4.2. Star Forming Main Sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mass-metallicity-relation">
+     11.4.3. Mass-Metallicity Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cold-gas-fraction">
+     11.4.4. Cold Gas Fraction
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -253,6 +361,112 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="galaxy-models">
 <h1><span class="section-number">11. </span>Galaxy Models<a class="headerlink" href="#galaxy-models" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/101.png"><img alt="../_images/101.png" class="align-center" src="../_images/101.png" style="width: 600px;" /></a>
+<div class="section" id="overview">
+<h2><span class="section-number">11.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Processes</p>
+<ul>
+<li><p>Gravity</p></li>
+<li><p>Hydrodynamics</p></li>
+<li><p>Star formation</p></li>
+<li><p>BH formation</p></li>
+<li><p>Star formation feedback</p></li>
+<li><p>AGN Feedback</p></li>
+<li><p>Stellar populations and chemical evolutioon</p></li>
+<li><p>Radiative Transfer</p></li>
+</ul>
+</li>
+<li><p>Challenges</p>
+<ul>
+<li><p>Dynamic ranges are huge: <span class="math notranslate nohighlight">\(\sim\)</span> 1 pc scales to <span class="math notranslate nohighlight">\(\sim\)</span> 10 Mpc scales</p></li>
+<li><p>Time: Age of Universe to dynamical times of galaxies (<span class="math notranslate nohighlight">\(10^6\)</span> years)</p></li>
+<li><p>Coupling of scales problem – large scales provide the boundary conditions with feedback from small scales affect the large scales</p></li>
+</ul>
+</li>
+<li><p>Low Redshift Boundary Conditions: simulations must satisfy these to be good:</p>
+<ul>
+<li><p>Color-magntiude relation of galaxies</p></li>
+<li><p>Tully-Fisher relation</p></li>
+<li><p>Luminosity and mass functions</p></li>
+<li><p>Number of central and satellite galaxies</p></li>
+<li><p>Mass-metallicty relation</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="semi-analytic-modeling">
+<h2><span class="section-number">11.2. </span>Semi-Analytic Modeling<a class="headerlink" href="#semi-analytic-modeling" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/102.png"><img alt="../_images/102.png" class="align-center" src="../_images/102.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Idea:</p>
+<ul>
+<li><p>WMAP cosmology, grow structure with n-body sims or Press-Schechter formalism</p></li>
+<li><p>Put baryons back in using analytic prescriptions or recipes</p></li>
+</ul>
+</li>
+<li><p>Recipes:</p>
+<ul>
+<li><p>Cold gas –&gt; Stars (Kennicutt-Schmidt)</p></li>
+<li><p>Cold gas –&gt; Hot gas by SN feedback</p></li>
+<li><p>Hot gas –&gt; cool gas by cooling via atomic line transitions (depends on density, temperature, and metallicity)</p></li>
+<li><p>Prescription for how the gas cools (and how much angular momentum it retains)</p></li>
+<li><p>Evolution of stellar populations and chemical abundances</p></li>
+<li><p>Mergers of galaxies within the dark matter haloes</p></li>
+<li><p>Allow free parameters like SF efficiency, stellar feedback efficiency, etc</p></li>
+</ul>
+</li>
+<li><p>Repeat this procedure for a large number of <span class="math notranslate nohighlight">\(z=0\)</span> haloes that properly sample the present-day halo mass function</p></li>
+<li><p><strong>Challenges of SAMS</strong></p>
+<ul>
+<li><p>Too many massive galaxies</p></li>
+<li><p>Massive galaxies are too blue</p></li>
+<li><p>Too many low mass galaxies</p></li>
+<li><p>Tully-Fisher zero point is not matched, galaxies spin too fast</p></li>
+<li><p>Does not match luminosity function at high <span class="math notranslate nohighlight">\(z&gt;2\)</span></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="hydrodynamical-simulations">
+<h2><span class="section-number">11.3. </span>Hydrodynamical Simulations<a class="headerlink" href="#hydrodynamical-simulations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>To build intuition:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/103.png"><img alt="../_images/103.png" class="align-center" src="../_images/103.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="comparison-to-data">
+<h2><span class="section-number">11.4. </span>Comparison to Data<a class="headerlink" href="#comparison-to-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="galaxy-stellar-mass-function">
+<h3><span class="section-number">11.4.1. </span>Galaxy Stellar Mass Function<a class="headerlink" href="#galaxy-stellar-mass-function" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Models predict efficient star formation early in low mass halos</p></li>
+<li><p>Low <span class="math notranslate nohighlight">\(z\)</span> does well though!</p></li>
+<li><p>Still differences at high mass end</p></li>
+<li><p>Problems at intermediate redshift</p></li>
+<li><p>Simulations have low mass haloes forming first; observations show the opposite</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/104.png"><img alt="../_images/104.png" class="align-center" src="../_images/104.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="star-forming-main-sequence">
+<h3><span class="section-number">11.4.2. </span>Star Forming Main Sequence<a class="headerlink" href="#star-forming-main-sequence" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A little more discrepant here. Models underpredict data systematically.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/105.png"><img alt="../_images/105.png" class="align-center" src="../_images/105.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="mass-metallicity-relation">
+<h3><span class="section-number">11.4.3. </span>Mass-Metallicity Relation<a class="headerlink" href="#mass-metallicity-relation" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/106.png"><img alt="../_images/106.png" class="align-center" src="../_images/106.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="cold-gas-fraction">
+<h3><span class="section-number">11.4.4. </span>Cold Gas Fraction<a class="headerlink" href="#cold-gas-fraction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Another challenge, lots of scatter in particular at high redshift.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/107.png"><img alt="../_images/107.png" class="align-center" src="../_images/107.png" style="width: 600px;" /></a>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -286,6 +500,13 @@
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title"><span class="section-number">10. </span>Clusters and Groups of Galaxies</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="cosmic.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Galaxies Over Cosmic Time</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
