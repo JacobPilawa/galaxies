@@ -128,7 +128,7 @@ $$
 We can write down:
 
 $$
-    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = \underbrace{-Z \psi}_\text{removal of metals from system} + \underbrace{\left(1-\alpha\right) Z\psi}_\text{contribution to metals from high mass stars (enrichment)} + \underbrace{q \psi}_\text{}
+    \frac{\mathrm{d}\left(M_g Z\right)}{\mathrm{d}t} = \underbrace{-Z \psi}_\text{removal of metals from system} + \underbrace{\left(1-\alpha\right) Z\psi}_\text{contribution to metals from high mass stars (enrichment)} + q \psi
 $$
 
 where $q \equiv \frac{\text{metals returned}}{\text{total mass}}$ ratio of mass in metals returned to that of the total mass at a given time. In other words, at some time $t$ massive stars are returning metals to the system, which has some total mass at time $t$.
