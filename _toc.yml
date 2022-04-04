@@ -17,3 +17,4 @@ sections:
 - file: pages/disks
 - file: pages/clusters
 - file: pages/models
+- file: pages/cosmic
