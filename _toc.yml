@@ -1,11 +1,11 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-format: jb-book
+format: jb-article
 root: intro
 options:
    numbered:   True
-chapters:
+sections:
 - file: pages/mw
 - file: pages/globalprops
 - file: pages/statprops
