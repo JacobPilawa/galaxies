@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -244,8 +246,77 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   12.1.
+  <a class="reference internal nav-link" href="#identifying-galaxies">
+   12.1. Identifying Galaxies
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lyman-break-technique">
+     12.1.1. Lyman Break Technique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#balmer-break-technique">
+     12.1.2. Balmer Break Technique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sub-mm-galaxies">
+     12.1.3. Sub-mm Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lyman-alpha-emitters">
+     12.1.4. Lyman Alpha Emitters
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evolution-of-global-properties">
+   12.2. Evolution of Global Properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#luminosity-and-mass-function">
+     12.2.1. Luminosity and Mass Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-formation-rate-density">
+     12.2.2. Star Formation Rate Density
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stellar-mass-density">
+     12.2.3. Stellar Mass Density
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-metallicity-of-the-universe">
+     12.2.4. Mean Metallicity of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-forming-main-sequence">
+     12.2.5. Star Forming Main Sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-star-formation-rate">
+     12.2.6. Specific Star Formation Rate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sfh-and-massive-bh-accretion-history">
+     12.2.7. SFH and Massive BH Accretion History
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   12.3. Summary
   </a>
  </li>
 </ul>
@@ -269,8 +340,77 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   12.1.
+  <a class="reference internal nav-link" href="#identifying-galaxies">
+   12.1. Identifying Galaxies
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lyman-break-technique">
+     12.1.1. Lyman Break Technique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#balmer-break-technique">
+     12.1.2. Balmer Break Technique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sub-mm-galaxies">
+     12.1.3. Sub-mm Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lyman-alpha-emitters">
+     12.1.4. Lyman Alpha Emitters
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evolution-of-global-properties">
+   12.2. Evolution of Global Properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#luminosity-and-mass-function">
+     12.2.1. Luminosity and Mass Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-formation-rate-density">
+     12.2.2. Star Formation Rate Density
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stellar-mass-density">
+     12.2.3. Stellar Mass Density
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-metallicity-of-the-universe">
+     12.2.4. Mean Metallicity of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#star-forming-main-sequence">
+     12.2.5. Star Forming Main Sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-star-formation-rate">
+     12.2.6. Specific Star Formation Rate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sfh-and-massive-bh-accretion-history">
+     12.2.7. SFH and Massive BH Accretion History
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   12.3. Summary
   </a>
  </li>
 </ul>
@@ -284,8 +424,125 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="galaxies-over-cosmic-time">
 <h1><span class="section-number">12. </span>Galaxies Over Cosmic Time<a class="headerlink" href="#galaxies-over-cosmic-time" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2><span class="section-number">12.1. </span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="identifying-galaxies">
+<h2><span class="section-number">12.1. </span>Identifying Galaxies<a class="headerlink" href="#identifying-galaxies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Some notes:</p>
+<ul>
+<li><p>For the same intrinsic size, galaxies are smaller with increasing <span class="math notranslate nohighlight">\(z\)</span>, and then they become larger again (angular diameter distance)</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="lyman-break-technique">
+<h3><span class="section-number">12.1.1. </span>Lyman Break Technique<a class="headerlink" href="#lyman-break-technique" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Relatively low <span class="math notranslate nohighlight">\(u\)</span> flux and a relatively blue continuum color of an observed galaxy can be explained by the Lyman break being redshifted to <span class="math notranslate nohighlight">\(z\sim 2\)</span> ot <span class="math notranslate nohighlight">\(3\)</span></p></li>
+<li><p>The galaxy will emerge from observations as you go to higher redshift</p></li>
+<li><p>From <a class="reference external" href="http://burro.astr.cwru.edu/Academics/Astr328/Notes/GalForm/LyBreakTech.html">here</a>:</p>
+<ul>
+<li><p>A photon emitted with wavelength shorter than 912 Angstroms (Lyman continuum) will be completely absorbed by hydrogen gas both in a galaxy and along the line of sight to us. Essentially, there will be no light making it to us from a galaxy with wavelengths shorter than that. We see a “break” (the Lyman break) in the spectrum of the galaxy. From 912-1216 A (Lyman alpha), photons can also be absorbed by intervening gas.</p></li>
+<li><p>For high redshift galaxies, this Lyman break redshifts into the optical. By looking at the colors of galaxies, we should see high redshift star forming galaxies as objects that “disappear” in the bluest filters, or more correctly are red in blue colors (ie U-B) and blue in red colors (B-V or V-I). We can identify high redshift candidates this way and do follow-up spectroscopy using big telescopes to confirm their redshifts.</p></li>
+</ul>
+</li>
+<li><p>This cannot be used for dusty star forming galaxies or quiescent galaxies at high <span class="math notranslate nohighlight">\(z\)</span></p>
+<ul>
+<li><p>Instead use balmer break at NIR wavelengths</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/108.png"><img alt="../_images/108.png" class="align-center" src="../_images/108.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="balmer-break-technique">
+<h3><span class="section-number">12.1.2. </span>Balmer Break Technique<a class="headerlink" href="#balmer-break-technique" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>QUiescent and dust star-forming galaxies cannot be identified using the Lyman break tech- nique. Quiescent because there are no stars producing UV emission. Dusty because the light is being absorbed in-situ. How do we take this into account?</p>
+<ul>
+<li><p>The light is thus mostly in NIR wavelengths! The stellar light of quiescent galaxies is shifted to NIR wavelengths beyond z ∼ 2, Balmer break between J and H band filter. Dusty star forming beyond z ∼ 2 also require NIR surveys.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/109.png"><img alt="../_images/109.png" class="align-center" src="../_images/109.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Quiescent galaxies at <span class="math notranslate nohighlight">\(z\sim 2\)</span> have the Balmer break between the J and H filters, allowing for a similar technique to Lyman break galaxies</p></li>
+<li><p>A primary feature is the strong break at 4000A (Angstroms), caused by the blanket absorption of high energy radiation from metals in stellar atmospheres and by a deficiency of hot, blue stars. A smoothly varying function can easily be fit to spectra, with a clear drop off in intensity at 4000A.</p></li>
+</ul>
+</div>
+<div class="section" id="sub-mm-galaxies">
+<h3><span class="section-number">12.1.3. </span>Sub-mm Galaxies<a class="headerlink" href="#sub-mm-galaxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>ALMA has allowed for dust temperature measurements to really high redshfit.</p></li>
+</ul>
+</div>
+<div class="section" id="lyman-alpha-emitters">
+<h3><span class="section-number">12.1.4. </span>Lyman Alpha Emitters<a class="headerlink" href="#lyman-alpha-emitters" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/110.png"><img alt="../_images/110.png" class="align-center" src="../_images/110.png" style="width: 600px;" /></a>
+</div>
+</div>
+<div class="section" id="evolution-of-global-properties">
+<h2><span class="section-number">12.2. </span>Evolution of Global Properties<a class="headerlink" href="#evolution-of-global-properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="luminosity-and-mass-function">
+<h3><span class="section-number">12.2.1. </span>Luminosity and Mass Function<a class="headerlink" href="#luminosity-and-mass-function" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/111.png"><img alt="../_images/111.png" class="align-center" src="../_images/111.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="star-formation-rate-density">
+<h3><span class="section-number">12.2.2. </span>Star Formation Rate Density<a class="headerlink" href="#star-formation-rate-density" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Star formation was highest around <span class="math notranslate nohighlight">\(z\sim2\)</span></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/112.png"><img alt="../_images/112.png" class="align-center" src="../_images/112.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="stellar-mass-density">
+<h3><span class="section-number">12.2.3. </span>Stellar Mass Density<a class="headerlink" href="#stellar-mass-density" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/113.png"><img alt="../_images/113.png" class="align-center" src="../_images/113.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="mean-metallicity-of-the-universe">
+<h3><span class="section-number">12.2.4. </span>Mean Metallicity of the Universe<a class="headerlink" href="#mean-metallicity-of-the-universe" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/114.png"><img alt="../_images/114.png" class="align-center" src="../_images/114.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="star-forming-main-sequence">
+<h3><span class="section-number">12.2.5. </span>Star Forming Main Sequence<a class="headerlink" href="#star-forming-main-sequence" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Star formation rate at fixed mass was higher at earlier times</p></li>
+<li><p>Starforming main sequence was already in place at earlier times</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/118.png"><img alt="../_images/118.png" class="align-center" src="../_images/118.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/115.png"><img alt="../_images/115.png" class="align-center" src="../_images/115.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="specific-star-formation-rate">
+<h3><span class="section-number">12.2.6. </span>Specific Star Formation Rate<a class="headerlink" href="#specific-star-formation-rate" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Decreases over cosmic time, and we also see we cannot get it even close with our best fit model.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/116.png"><img alt="../_images/116.png" class="align-center" src="../_images/116.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="sfh-and-massive-bh-accretion-history">
+<h3><span class="section-number">12.2.7. </span>SFH and Massive BH Accretion History<a class="headerlink" href="#sfh-and-massive-bh-accretion-history" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/117.png"><img alt="../_images/117.png" class="align-center" src="../_images/117.png" style="width: 600px;" /></a>
+</div>
+</div>
+<div class="section" id="summary">
+<h2><span class="section-number">12.3. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>There are many criteria to identify distant galaxies</p>
+<ul>
+<li><p>The ‘zoo’ of galaxies provides a biased, incomplete census of the distant galaxy population</p></li>
+</ul>
+</li>
+<li><p>Complete photometric and spectroscopic surveys provide unbiased views of distant galaxies</p>
+<ul>
+<li><p>Photometric surveys are large, but suffer from systematic uncertainties (no accurate photo-<span class="math notranslate nohighlight">\(z\)</span>)</p></li>
+<li><p>Spectroscopic surveys are accurate but small</p></li>
+<li><p>Medium band photometry or low res spectroscopy compromise between techniques</p></li>
+</ul>
+</li>
+<li><p>Star formation rate density increas to <span class="math notranslate nohighlight">\(z\sim 2\)</span> and then falls again</p></li>
+<li><p>The stellar mass density increases gradually, with 50% of the mass formed by <span class="math notranslate nohighlight">\(z\sim 1.2\)</span></p></li>
+<li><p>The main sequence of star formation was already in place at <span class="math notranslate nohighlight">\(z\sim 6\)</span> (or higher), and the specific star formation rate decreases with time</p></li>
+<li><p>The accretion history of SMBHs follows the star formation history of the Universe</p></li>
+</ul>
 </div>
 </div>
 
