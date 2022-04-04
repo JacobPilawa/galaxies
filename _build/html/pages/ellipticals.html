@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -51,6 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="9. Disk Galaxies" href="disks.html" />
     <link rel="prev" title="7. Dark Matter" href="dm.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -136,6 +139,11 @@
    8. Elliptical Galaxies
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="disks.html">
+   9. Disk Galaxies
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -218,6 +226,70 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brightness-profiles">
+   8.1. Brightness Profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparing-to-s0-spheroidal-galaxies">
+     8.1.1. Comparing to S0/Spheroidal Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-fundamental-plane">
+   8.2. The Fundamental Plane
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#faber-jackson-relation">
+     8.2.1. Faber-Jackson Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-kormendy-relation">
+     8.2.2. The Kormendy Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     8.2.3. The Fundamental Plane
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#derivation-from-the-virial-theorem">
+       8.2.3.1. Derivation from the Virial Theorem
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-populations-in-ellipticals">
+   8.3. Stellar Populations in Ellipticals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evolution-over-cosmic-time">
+   8.4. Evolution over Cosmic Time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-elliptical-galaxies">
+   8.5. Summary of Elliptical Galaxies
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -230,6 +302,70 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brightness-profiles">
+   8.1. Brightness Profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparing-to-s0-spheroidal-galaxies">
+     8.1.1. Comparing to S0/Spheroidal Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-fundamental-plane">
+   8.2. The Fundamental Plane
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#faber-jackson-relation">
+     8.2.1. Faber-Jackson Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-kormendy-relation">
+     8.2.2. The Kormendy Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     8.2.3. The Fundamental Plane
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#derivation-from-the-virial-theorem">
+       8.2.3.1. Derivation from the Virial Theorem
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stellar-populations-in-ellipticals">
+   8.3. Stellar Populations in Ellipticals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evolution-over-cosmic-time">
+   8.4. Evolution over Cosmic Time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-elliptical-galaxies">
+   8.5. Summary of Elliptical Galaxies
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -238,6 +374,183 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="elliptical-galaxies">
 <h1><span class="section-number">8. </span>Elliptical Galaxies<a class="headerlink" href="#elliptical-galaxies" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="brightness-profiles">
+<h2><span class="section-number">8.1. </span>Brightness Profiles<a class="headerlink" href="#brightness-profiles" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/72.png"><img alt="../_images/72.png" class="align-center" src="../_images/72.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Sersic profiles are not always the best descriptions of elliptical galaxies – we have two families of ellipticals.</p>
+<ul>
+<li><p>Core</p>
+<ul>
+<li><p>Higher <span class="math notranslate nohighlight">\(n\)</span>, have “missing light” near the center. Maybe BBH scouring? Maybe dissipationaless (i.e., no gas) mergers</p></li>
+<li><p>Core radii scale with black hole sphere of influence / black hole mass</p></li>
+<li><p>Typically more luminous and more massive</p></li>
+</ul>
+</li>
+<li><p>Coreless</p>
+<ul>
+<li><p>Do not have the missing light at small radii. Maybe from dissipational mergers?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="comparing-to-s0-spheroidal-galaxies">
+<h3><span class="section-number">8.1.1. </span>Comparing to S0/Spheroidal Galaxies<a class="headerlink" href="#comparing-to-s0-spheroidal-galaxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Importantly, spheroidal and S0 galaxies have very properties than true ellipticals</p>
+<ul>
+<li><p>Core ellipticals are much more massive and have higher Sersic <span class="math notranslate nohighlight">\(n\)</span></p></li>
+<li><p>S0 bulges are more comparable to coreless ellipticals and fall on the relations.</p></li>
+<li><p>They are much fainter at the same radii, and have more structure in the surface brightness profiles.</p></li>
+<li><p>They also follow totally different luminosity functions – <strong>ellipticals are much brighter than spheroidal galaxies</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/73.png"><img alt="../_images/73.png" class="align-center" src="../_images/73.png" style="width: 600px;" /></a>
+</div>
+</div>
+<div class="section" id="the-fundamental-plane">
+<h2><span class="section-number">8.2. </span>The Fundamental Plane<a class="headerlink" href="#the-fundamental-plane" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="faber-jackson-relation">
+<h3><span class="section-number">8.2.1. </span>Faber-Jackson Relation<a class="headerlink" href="#faber-jackson-relation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>One of the first empirical laws discovered about elliptical galaxies is the tight correlation between the Luminosity <span class="math notranslate nohighlight">\(L\)</span> and the stellar velocity disperison <span class="math notranslate nohighlight">\(\sigma\)</span>: <span class="math notranslate nohighlight">\(L\propto \sigma^{\sim 4}\)</span></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/74.png"><img alt="../_images/74.png" class="align-center" src="../_images/74.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="the-kormendy-relation">
+<h3><span class="section-number">8.2.2. </span>The Kormendy Relation<a class="headerlink" href="#the-kormendy-relation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Another relation is the Kormendy relation – the average surface brightness correlates tightly with the half-light radius.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/75.png"><img alt="../_images/75.png" class="align-center" src="../_images/75.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id1">
+<h3><span class="section-number">8.2.3. </span>The Fundamental Plane<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>It turns out that we can combine the two above relations (which are just projections of a more fundamental thing called the <strong>Fundamental Plane of Elliptical Galaxies</strong>): a relationship between the surface brightness, velocity dispersion, and effective radius.</p></li>
+<li><p>Here are some projections of the Fundamental Plane:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/76.png"><img alt="../_images/76.png" class="align-center" src="../_images/76.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/77.png"><img alt="../_images/77.png" class="align-center" src="../_images/77.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Elliptical galaxies are a homogeneous population!</p>
+<ul>
+<li><p>Dwarf spheroidals do not fall on these relations.</p></li>
+<li><p>Globular clusters do not fall on these relations.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/78.png"><img alt="../_images/78.png" class="align-center" src="../_images/78.png" style="width: 600px;" /></a>
+<div class="section" id="derivation-from-the-virial-theorem">
+<h4><span class="section-number">8.2.3.1. </span>Derivation from the Virial Theorem<a class="headerlink" href="#derivation-from-the-virial-theorem" title="Permalink to this headline">¶</a></h4>
+<p>We have the Fundamental Plane as:</p>
+<div class="math notranslate nohighlight">
+\[
+L \propto \sigma^{2.65} r_e^{0.65}
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+r_e \propto \sigma^{1.24} I_e^{-0.82}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mu = -2.5\log_{10}I_e\)</span>. We can get these relations close with the virial theorem.</p>
+<div class="math notranslate nohighlight">
+\[
+2\langle K\rangle=-\langle U\rangle
+\]</div>
+<p>We can re-write the kinetic energy as:</p>
+<div class="math notranslate nohighlight">
+\[
+2\langle K\rangle=\left\langle\Sigma_{i=0}^{N} m_{i} v_{i}^{2}\right\rangle
+\]</div>
+<p>The bulk rotation of the galaxy is slow, but velocity dispersions can be huge! Thus, the impoortant component is the random motion of stars themselves – the <strong>velocity dispersion</strong>.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \langle v^2 \rangle - \langle v \rangle ^2
+\]</div>
+<p>Thus:</p>
+<div class="math notranslate nohighlight">
+\[
+2\langle K\rangle=\left\langle\sum_{i=0}^{N} m_{i} v_{i}^{2}\right\rangle \approx M_{\star} \sigma_{v}^{2}
+\]</div>
+<p>What about the potential energy? We have:</p>
+<div class="math notranslate nohighlight">
+\[
+    U = - C G \frac{M M_\star}{r_e}
+\]</div>
+<p>Putting what we have together, we have:</p>
+<div class="math notranslate nohighlight">
+\[
+    M_\star \sigma_v^2 = - G \frac{M M_\star}{r_e} \rightarrow M = K r_e \sigma_v^2 \text{ where } K \equiv \text{ constants}
+\]</div>
+<p>Let’s write the surface brightness:</p>
+<div class="math notranslate nohighlight">
+\[
+    I_e = \frac{F}{\Omega} = \frac{L}{4\pi d^2} \frac{1}{\frac{\pi r_e^2}{d^2}} \propto \frac{L}{r_e^2}
+\]</div>
+<p>This is effectively the average surface brightness within <span class="math notranslate nohighlight">\(r_e\)</span>. Continuing on, we have…</p>
+<div class="math notranslate nohighlight">
+\[
+    L \propto r_e^2 I_e \rightarrow L \left(\frac{M}{L}\right) \propto r_e \sigma_v^2 \rightarrow r_e^2 I_e \left(\frac{M}{L}\right) \propto r_e \sigma_v^2
+\]</div>
+<p>We take this last equation and solve for <span class="math notranslate nohighlight">\(r_e\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+    r_e \propto \left(\frac{M}{L} \right)^{-1} \sigma_v^2 I_e^{-1}
+\]</div>
+<p>Assuming that the mass-to-light ratio is constant, we have:</p>
+<div class="math notranslate nohighlight">
+\[
+    r_e \propto \sigma_v^2 I_e^{-1}
+\]</div>
+<p>The real scaling relation is <span class="math notranslate nohighlight">\(r_e \propto \sigma^{1.24} I_e^{-0.82}\)</span>.</p>
+<p><strong>The majority of the “tilt’’ of the fundamental plane is due to a changing mass-to-light ratio, but we assumed that it was constant!</strong> This is a good sign that elliptical galaxies are dispersion supported.</p>
+</div>
+</div>
+</div>
+<div class="section" id="stellar-populations-in-ellipticals">
+<h2><span class="section-number">8.3. </span>Stellar Populations in Ellipticals<a class="headerlink" href="#stellar-populations-in-ellipticals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Massive core ellipticals both form their stars earlier and on shorter-time scales than moreless ellipticals!</p></li>
+<li><p>By the time the Type Ia SN are going off, the elliptical has already used up all its gas and thus cannot continue to Fe enrich the ISM and the stars.</p>
+<ul>
+<li><p>This is why we are alpha enhanced – the Type II all went off and formed stars quickly, without the Fe enriching the ISM.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/79.png"><img alt="../_images/79.png" class="align-center" src="../_images/79.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/81.png"><img alt="../_images/81.png" class="align-center" src="../_images/81.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="evolution-over-cosmic-time">
+<h2><span class="section-number">8.4. </span>Evolution over Cosmic Time<a class="headerlink" href="#evolution-over-cosmic-time" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The quiescent galaxy population grows over time, though in particular, the most massive galaxies were already formed/in place at earlier times. We can see this in the evolution of the galaxy mass function with redshift:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/80.png"><img alt="../_images/80.png" class="align-center" src="../_images/80.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>The much smaller quiescent galaxies “red nuggets” at high redshift are thought to be the cores of modern day ellipticals. Outskirts build up over time by minor mergers.</p>
+<ul>
+<li><p>This is to say that Early Type galaxies were smaller at earlier times. These much smaller galaxies formed the cores of modern day ellipticals, and the outskirts are built up over cosmic time by accretion of smaller galaxies (“minor mergers”).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="summary-of-elliptical-galaxies">
+<h2><span class="section-number">8.5. </span>Summary of Elliptical Galaxies<a class="headerlink" href="#summary-of-elliptical-galaxies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Elliptical galaxies can be well-described by Sersic profiles.</p></li>
+<li><p>Elliptical galaxies form a well-defined fundamental plane: the relationship between the effective radius, average surface brightness, and central velocity dispersion.</p></li>
+<li><p>The fundamental plane is tilted compared to what you derive from the virial theorem.</p>
+<ul>
+<li><p>Primarily due to mass-to-light variations.</p></li>
+</ul>
+</li>
+<li><p>The Kormendy and Faber-Jackson relations are projections of the fundamental plane.</p></li>
+<li><p>Dwarf spheroidal galaxies and globular clusters do not fall on the fundamental plane of elliptical galaxies. They are not a part of the population of early type galaxies.</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -271,6 +584,13 @@
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title"><span class="section-number">7. </span>Dark Matter</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="disks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Disk Galaxies</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
