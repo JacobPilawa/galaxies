@@ -16,3 +16,4 @@ chapters:
 - file: pages/ellipticals
 - file: pages/disks
 - file: pages/clusters
+- file: pages/models

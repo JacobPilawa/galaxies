@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -51,6 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="11. Galaxy Models" href="models.html" />
     <link rel="prev" title="9. Disk Galaxies" href="disks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -146,6 +149,11 @@
    10. Clusters and Groups of Galaxies
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="models.html">
+   11. Galaxy Models
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -234,8 +242,40 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   10.1.
+  <a class="reference internal nav-link" href="#properties-of-clusters">
+   10.1. Properties of Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ingredients-of-a-cluster">
+   10.2. Ingredients of a Cluster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identification-of-clusters">
+   10.3. Identification of Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relevant-physical-proceses-in-clusters">
+   10.4. Relevant Physical Proceses in Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cluster-galaxy-population">
+   10.5. Cluster Galaxy Population
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brightest-cluster-galaxies">
+     10.5.1. Brightest Cluster Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hot-gas-in-clusters">
+   10.6. Hot Gas in Clusters
   </a>
  </li>
 </ul>
@@ -259,8 +299,40 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   10.1.
+  <a class="reference internal nav-link" href="#properties-of-clusters">
+   10.1. Properties of Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ingredients-of-a-cluster">
+   10.2. Ingredients of a Cluster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identification-of-clusters">
+   10.3. Identification of Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relevant-physical-proceses-in-clusters">
+   10.4. Relevant Physical Proceses in Clusters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cluster-galaxy-population">
+   10.5. Cluster Galaxy Population
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brightest-cluster-galaxies">
+     10.5.1. Brightest Cluster Galaxies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hot-gas-in-clusters">
+   10.6. Hot Gas in Clusters
   </a>
  </li>
 </ul>
@@ -274,8 +346,124 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="clusters-and-groups-of-galaxies">
 <h1><span class="section-number">10. </span>Clusters and Groups of Galaxies<a class="headerlink" href="#clusters-and-groups-of-galaxies" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2><span class="section-number">10.1. </span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="properties-of-clusters">
+<h2><span class="section-number">10.1. </span>Properties of Clusters<a class="headerlink" href="#properties-of-clusters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Largest virialized structures in the Universe</strong></p></li>
+<li><p><strong>Richness criterion:</strong> at least 50 members with apparent magnitude <span class="math notranslate nohighlight">\(m &lt; m_3 +2\)</span> (with <span class="math notranslate nohighlight">\(m_3\)</span> the magnitude of the third brightest cluster member)</p>
+<ul>
+<li><p>Richness = # of galaxies between <span class="math notranslate nohighlight">\(m_3\)</span> and <span class="math notranslate nohighlight">\(m_3 + 2\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Compactness criterion:</strong> only members with distances &lt; 1.5 <span class="math notranslate nohighlight">\(h^{-1}\)</span> Mpc</p></li>
+<li><p><strong>Typical sizes:</strong> 1-3 Mpc</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/96.png"><img alt="../_images/96.png" class="align-center" src="../_images/96.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/97.png"><img alt="../_images/97.png" class="align-center" src="../_images/97.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>The richest clusters are typically found at intersections of filaments in the Cosmic Web</p></li>
+<li><p>Roughly <span class="math notranslate nohighlight">\(1-2\)</span> % of galaxies are in rich clusters</p></li>
+<li><p>Up to 10% are in clusters at al</p></li>
+<li><p>The majority of galaxies are in “groups”</p></li>
+</ul>
+</div>
+<div class="section" id="ingredients-of-a-cluster">
+<h2><span class="section-number">10.2. </span>Ingredients of a Cluster<a class="headerlink" href="#ingredients-of-a-cluster" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/98.png"><img alt="../_images/98.png" class="align-center" src="../_images/98.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p><strong>Galaxies</strong></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\sim 100\)</span> large galaxies, <span class="math notranslate nohighlight">\(&gt; 10^{3}\)</span> total galaxies</p></li>
+<li><p>Typical speeds of <span class="math notranslate nohighlight">\(1000\)</span> km/s</p></li>
+</ul>
+</li>
+<li><p><strong>Intra-cluster Stars</strong></p>
+<ul>
+<li><p>Very faint, but comprises of <span class="math notranslate nohighlight">\(10-50\)</span>% of the total cluster light</p></li>
+</ul>
+</li>
+<li><p><strong>Hot gas</strong></p>
+<ul>
+<li><p>Hydrostatic atmosphere of clusters</p></li>
+<li><p><span class="math notranslate nohighlight">\(T\sim 10^{7-8}\)</span> K → very hot x-ray emitters</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{gas} \sim 5 \times M_{gal}\)</span> with <span class="math notranslate nohighlight">\(Z \sim 0.3 Z_{sol}\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Dark matter</strong></p>
+<ul>
+<li><p>Absolutely dominates the total mass</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="identification-of-clusters">
+<h2><span class="section-number">10.3. </span>Identification of Clusters<a class="headerlink" href="#identification-of-clusters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fingers of God: In redshift space, large peculiar velocities make clusters appear as elongated stuctures</p></li>
+<li><p>Quiescent galaxies in clusters have roughly the same colors (same redshift and roughly the same age), so if we see a ton of red galaxies in the same color, they’re likely in a cluster</p></li>
+<li><p>At high <span class="math notranslate nohighlight">\(z\)</span>, we cannot use the red sequence method since galaxies are still forming stars and spectroscopic redshifts are difficult to obtain</p>
+<ul>
+<li><p>Instead we use intermediate band filters to measure more accurate photometric redshifts (basically photo-z from SEDs)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="relevant-physical-proceses-in-clusters">
+<h2><span class="section-number">10.4. </span>Relevant Physical Proceses in Clusters<a class="headerlink" href="#relevant-physical-proceses-in-clusters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Tidal stripping</strong> happens when the tidal forces from a neighboring object overcomes the gravitational force holding the object together</p></li>
+<li><p><strong>Galaxy harassment</strong> refers to the accumulated effect of multiple gravitational interactions, both galaxy-galaxy and galaxy-cluster</p></li>
+<li><p><strong>Ram pressure stripping</strong> by hot cluster gas, removes cold gas from galaxies</p></li>
+<li><p><strong>Major mergers</strong> are less common in galaxy clusters because of the large velocity dispersions <span class="math notranslate nohighlight">\(\sigma \sim 1000\)</span> km/s</p></li>
+</ul>
+</div>
+<div class="section" id="cluster-galaxy-population">
+<h2><span class="section-number">10.5. </span>Cluster Galaxy Population<a class="headerlink" href="#cluster-galaxy-population" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>There’s typically a radial gradient in galaxy type, with more early type galaxies at the center and spirals/irregulars in the outskirts</p></li>
+<li><p><strong>Butcher-Oemler Effect</strong>: Fraction of blue galaxies in clusters increases with redshift</p>
+<ul>
+<li><p>Fraction of spirals, star formation increases with redshift,</p></li>
+<li><p>Galaxy populatios evolve rapidly in clusters, primarily due to environmental effects</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/99.png"><img alt="../_images/99.png" class="align-center" src="../_images/99.png" style="width: 600px;" /></a>
+<div class="section" id="brightest-cluster-galaxies">
+<h3><span class="section-number">10.5.1. </span>Brightest Cluster Galaxies<a class="headerlink" href="#brightest-cluster-galaxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Brightest galaxies in cluster, with essentially zero velocity relative to the cluster mean</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sim 10L_\star\)</span> galaxies, 50-100 kpc in scale</p></li>
+<li><p>Also called cD galaxies, extended haloes of stars, many of which are radio galaxies</p></li>
+<li><p>Multiple nuclei are often observed, and they’re quite successful at eating their neighbors</p></li>
+<li><p>They <strong>do not follow</strong> the luminosity function of galaxies</p>
+<ul>
+<li><p>They also have lower velocity dispersions for their magnitude/mass than you’d predict from Faber-Jackson relation</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="hot-gas-in-clusters">
+<h2><span class="section-number">10.6. </span>Hot Gas in Clusters<a class="headerlink" href="#hot-gas-in-clusters" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/100.png"><img alt="../_images/100.png" class="align-center" src="../_images/100.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Cluster halos retain a hot, gaseous atmosphere</p>
+<ul>
+<li><p>They’re the most luminous, extended X-ray sources, with <span class="math notranslate nohighlight">\(L_x \sim 10^{43}\)</span> to <span class="math notranslate nohighlight">\(10^{46}\)</span> ergs/s</p></li>
+<li><p>Gas is really hot, <span class="math notranslate nohighlight">\(T\sim 10^{7}\)</span> to <span class="math notranslate nohighlight">\(10^{8}\)</span> K, likely heated by infall into the deep halo potential</p></li>
+</ul>
+</li>
+<li><p>Gas radiates in X-rays via free-free radiation (thermal bremsstrahlung) – basically electrons are accelerated in the electric field of other particles and radiate</p></li>
+<li><p>Gas masses that range from <span class="math notranslate nohighlight">\(M_{gas} \sim M_{stars}\)</span> to <span class="math notranslate nohighlight">\(M_{gas} \sim 7 M_{stars}\)</span> (<strong>more massive clusters have higher gas fractions</strong>)</p></li>
+<li><p>Gas Accretion</p>
+<ul>
+<li><p>Some gas falling into dark matter halo shocks to the virial temperature and reaches (quasi-) hydrostatic equilibrium (hot accretion)</p></li>
+<li><p>The rest of the gas falls in along cold streams (cold accretion)</p></li>
+<li><p>Hot accretion is more dominant in massive halos and at low redshift</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 
@@ -310,6 +498,13 @@
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title"><span class="section-number">9. </span>Disk Galaxies</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="models.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Galaxy Models</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
